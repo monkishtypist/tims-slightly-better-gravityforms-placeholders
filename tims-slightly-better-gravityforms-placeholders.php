@@ -4,7 +4,7 @@
 
 Plugin Name: Gravity Forms - Tim's Slightly Better Placeholders add-on
 
-Plugin URI: http://github.com/neojp/gravity-forms-placeholders/
+Plugin URI: https://github.com/ninthlink/nlk-plugins/tree/master/tims-slightly-better-gravityforms-placeholders
 
 Description: Adds HTML5 placeholder support to Gravity Forms' fields with a javascript fallback. Javascript & jQuery are required.
 
@@ -18,9 +18,9 @@ Author URI: http://monkishtypist.com
 
 Instructions:
 
-Add "gplhfield" class for all fields, or "gplhinput" specifically for complex fields (address, name, etc.)
+Just add a "tsbplaceholder" CSS classname to the required fields or form
 
-Original still supported: Just add a "gplaceholder" CSS classname to the required fields or form
+For complex fields, to keep main labels, but convert sub-labels to placeholders - such as Name field - add additional class "complex"
 
 */
 
