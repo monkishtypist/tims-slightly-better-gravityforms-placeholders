@@ -30,18 +30,20 @@ if ( isset( $GLOBALS['pagenow'] ) && $GLOBALS['pagenow'] == 'wp-login.php' )
 
 	return;
 
+if( !function_exists('gf_tsb_placeholder_enqueue_scripts') )
 
+{
 
-add_action('wp_print_scripts', 'gf_placeholder_enqueue_scripts');
+	add_action('wp_print_scripts', 'gf_tsb_placeholder_enqueue_scripts');
 
+	function gf_tsb_placeholder_enqueue_scripts() {
 
+		$plugin_url = plugins_url( basename(dirname(__FILE__)) );
 
-function gf_placeholder_enqueue_scripts() {
+		echo "<script>var jquery_tsb_placeholder_url = '" . $plugin_url . "/jquery.tsbplaceholder-1.0.1.js';</script>";
 
-	$plugin_url = plugins_url( basename(dirname(__FILE__)) );
+		wp_enqueue_script('_gf_tsb_placeholders', $plugin_url . '/gf.tsbplaceholders.js', array('jquery'), '1.0' );
 
-	echo "<script>var jquery_placeholder_url = '" . $plugin_url . "/jquery.placeholder-1.0.1.js';</script>";
-
-	wp_enqueue_script('_gf_placeholders', $plugin_url . '/gf.placeholders.js', array('jquery'), '1.0' );
+	}
 
 }
