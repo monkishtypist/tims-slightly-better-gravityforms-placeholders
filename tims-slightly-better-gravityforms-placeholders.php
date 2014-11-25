@@ -42,7 +42,7 @@ if( !function_exists('gf_tsb_placeholder_enqueue_scripts') )
 
 		echo "<script>var jquery_tsb_placeholder_url = '" . $plugin_url . "/jquery.tsbplaceholder-1.0.1.js';</script>";
 
-		wp_enqueue_script('_gf_tsb_placeholders', $plugin_url . '/gf.tsbplaceholders.js', array('jquery'), '1.0' );
+		wp_enqueue_script('_gf_tsb_placeholders', $plugin_url . '/gf.placeholders.js', array('jquery'), '1.0' );
 
 	}
 
