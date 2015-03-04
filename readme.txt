@@ -3,7 +3,7 @@ Contributors: monkishtypist
 Tags: gravityforms, gravity, forms, placeholders, html5, jquery.placeholders.js
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 1.2.1
+Stable tag: 1.0
 
 Adds HTML5 placeholder support to Gravity Forms' fields with a Javascript fallback. Javascript & jQuery are required.
 
